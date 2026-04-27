@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Site de Gatinhos Cataas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="quadrado">
+        <img id="fotoDoGato" src="https://cataas.com/cat" alt="Gatinho">
+    </div>
+
+    
+    <script>
+        const imagem = document.getElementById('fotoDoGato');
+        const botao = document.getElementById('botaoSortear');
+
+        // Função simples: ela apenas muda o endereço da imagem
+        // Adicionamos o "?t=" no final para o navegador não "viciar" na mesma foto
+        function trocarGato() {
+            imagem.src = "https://cataas.com/cat?t=" + new Date().getTime();
+        }
+
+        
+    </script>
+</body>
+</html>

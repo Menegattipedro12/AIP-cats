@@ -1,0 +1,43 @@
+/* Deixa o fundo preto e centraliza tudo */
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O quadrado branco */
+.quadrado {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px; /* Um pequeno respiro branco em volta da foto */
+}
+
+/* A foto dentro do quadrado */
+#fotoDoGato {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* O botão */
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #ccc;
+}
